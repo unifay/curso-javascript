@@ -1,6 +1,6 @@
 # Curso basico de JavaScript
 
-## Temario
+## Temario / Indice
 
 ```
 1.-Nombres en JavaScript
@@ -8,16 +8,16 @@
     PascalCase
 
 2.-Tipos de datos
-    String
-    Numeros
-    Array
-    Boleanos
+    string
+    numeros
+    array
+    boleanos
 
 3.-Variables
     Declaración e inicializacion
-    Var
-    Let
-    Const
+    var
+    let
+    const
 
 4.-Imprimir datos
     console
@@ -157,7 +157,7 @@ var // No ocupar
 let // Si ocupar
 ```
 
-### Const
+### const
 ---
 
 Si quieres reescribir el valor de una constante no la uses, mejor usa `let`.
@@ -175,9 +175,10 @@ console.log(SALUDO) // imprimiendo el valor
 ```
 
 ## Imprimir datos
-### Consola
+La unica que realmente se ocupa y solamente para hacer pruebas es el console.log, las demas no se ocupan, solo para practicas pequeñas
+### consola
 ---
-console.() te permite imprimir datos en la consola de tu navegador. La consola en chrome es esta:
+`console.log()` te permite imprimir datos en la consola de tu navegador. La consola en chrome es esta:
 
 <div align="center">
 <img src="./assets/images/console.png" height="300">
@@ -185,7 +186,7 @@ console.() te permite imprimir datos en la consola de tu navegador. La consola e
 
 Esta seccion se abre con click derecho, `inspect element` o con el shortcut `Ctrl + Shift + i`.
 
-Ya ahora sabiendo como ver la, te preguntaras para que sirve y como se ocupa, tiene varias opciones, pero la que mas se ocupa es la de `console.log`. Veamos un ejemplo con Javascript
+Ya ahora sabiendo como ver la consola, te preguntaras para que sirve y como se ocupa, tiene varias opciones, pero la que mas se ocupa es la de `console.log`. Veamos un ejemplo con Javascript
 
 ```js
 console.log('Texto de muestra');     | 'Texto de muestra'
@@ -194,3 +195,33 @@ console.log('Derecha consola');      | 'Derecha consola'
 ```
 
 Ademas de `console.log` hay otros console, como `console.error` que destaca errores, `console.warn` que te avisa de cosas que pueden ser peligrosas, `console.clear` que limpia la consola, `console.table` que te permite imprimir una tabla con datos, `console.time` y `console.timeEnd` que te permite medir el tiempo que tarda una funcion en ejecutarse, entre otras mas. Todas estas tienen la misma sintaxis solo cambia el `log` por otra cosa.
+### alert
+---
+`alert()` te permite mostrar una ventana emergente en el navegador con un mensaje, y un boton de aceptar. no se ocupa mucho en el desarrollo profesional ya que puede asustar al usuario. alert() sirve mas que nada para mostrar mensajes de error, pero no para mostrar mensajes de informacion.
+
+```js
+alert('Hola, yo soy una alerta');
+```
+
+<div align="center">
+<img src="./assets/images/alert.png" height="180" alt="Recuadro blanco con un boton que muestra lo que imprime el alert anterior">
+</div>
+
+### prompt
+---
+`prompt()` Es muy parecido a una alerta, pero con una seccion de texto para que el usuario ingrese un valor que tu le pidas, este valor se guarda en una variable. Para alguna practica es muy util, pero al momento de hacer una pagina seria es mejor usar un input.
+
+<div align="center">
+<img src="./assets/images/prompt.png" height="180" alt="Recuadro blanco con un boton de 'OK' que muestra lo que imprime el prompt anterior">
+</div>
+
+### document.write
+---
+
+`document.write()` es una forma de escribir en el navegador, pero no es muy util, ya que no se puede usar en el desarrollo profesional. Esta lo que hace es imprimir un mensaje en el body. En el caso de una pagina web, es mejor usar el `innerHTML` u otro metodo. 
+
+<div align="center">
+<img src="./assets/images/document.write.png" height="180" alt="Recuadro blanco con un boton de 'OK' que muestra lo que imprime el prompt anterior">
+</div>
+
+## Operadores matematicos y aritmeticos
