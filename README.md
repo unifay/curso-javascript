@@ -99,7 +99,15 @@ Los números son los que se escriben sin comillas, pueden ser enteros`55`, decim
 
 ### Arrays
 ---
-Es una forma de almacenar varios valores en una sola variable, es decir, una lista de valores. Los arrays se escriben con corchetes. Puedes almacenar cualquier tipo de datos. Cada tipo de dato tiene su propio espacio y indice. lo raro es que los indices empiezan en 0, no en 1. entonces; Si tienes `['hola',12,'Manzana']` el primer valor es `hola`, el segundo es `12` y el tercero es `Manzana`. pero esto no quiere decir que 'hola' tenga el indice 1, si no que el indice es 0. Por lo tanto si quieres acceder a este valor, deber hacerlo con `[0]`, Esto es algo complicado y lo hiras entendiendo con el tiempo. y a lo largo de este curso.
+Es una forma de almacenar varios valores en una sola variable, es decir, una lista de valores. Los arrays se escriben con corchetes. Puedes almacenar cualquier tipo de datos. Cada tipo de dato tiene su propio espacio y indice. lo raro es que los indices empiezan en 0, no en 1. entonces; Si tienes `['hola', 12, 'Manzana']` el primer valor es `hola`, el segundo es `12` y el tercero es `Manzana`. pero esto no quiere decir que `hola` tenga el indice 1, si no que el indice es 0. Por lo tanto si quieres acceder a este valor, deber hacerlo con `[0]`, Esto es algo complicado y lo hiras entendiendo y ocupando con el tiempo.
+
+```js
+| (index) |  Values   |
+-----------------------
+|    0    |  'hola'   |
+|    1    |    12     |
+|    2    | 'Manzana' |
+```
 
 ### Boleanos
 ---
@@ -145,8 +153,8 @@ console.log(b) // 1
 
 // Con let la variable solo se reescribe dentro del bloque
 // Con var se reescribe de forma global
-Var; // No ocupar
-Let // Si ocupar
+var // No ocupar
+let // Si ocupar
 ```
 
 ### Const
@@ -165,3 +173,23 @@ SALUDO = 1 // Como es una constante no se puede redeclarar su valor (Error)
 
 console.log(SALUDO) // imprimiendo el valor
 ```
+
+## Imprimir datos
+
+### Consola
+---
+El console es una herramienta que te permite imprimir datos en la consola de tu navegador. La consola en chrome es esta:
+
+<center><img src="./assets/images/console.png" height="300"></center>
+
+Esta seccion se abre con el boton derecho del mouse, y seleccionas `inspect element` o con el shortcut `Ctrl + Shift + i`.
+
+Ya ahora sabiendo como ver la, te preguntaras para que sirve y como se ocupa, tiene varias opciones, pero la que mas se ocupa es la de `console.log`. Veamos un ejemplo con Javascript
+
+```js
+console.log('Texto de muestra');     | 'Texto de muestra'
+console.log('Izquierda codigo JS');  | 'Izquierda codigo JS'
+console.log('Derecha consola');      | 'Derecha consola'
+```
+
+Ademas de `console.log` hay otros console, como `console.error` que destaca errores, `console.warn` que te avisa de cosas que pueden ser peligrosas, `console.clear` que limpia la consola, `console.table` que te permite imprimir una tabla con datos, `console.time` y `console.timeEnd` que te permite medir el tiempo que tarda una funcion en ejecutarse, entre otras mas. Todas estas tienen la misma sintaxis solo cambia el `log` por otra cosa.
