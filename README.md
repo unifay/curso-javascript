@@ -175,12 +175,13 @@ console.log(SALUDO) // imprimiendo el valor
 ```
 
 ## Imprimir datos
-
 ### Consola
 ---
 El console es una herramienta que te permite imprimir datos en la consola de tu navegador. La consola en chrome es esta:
 
-<center><img src="./assets/images/console.png" height="300"></center>
+<div align="center">
+<img src="./assets/images/console.png" height="300">
+</div>
 
 Esta seccion se abre con el boton derecho del mouse, y seleccionas `inspect element` o con el shortcut `Ctrl + Shift + i`.
 
